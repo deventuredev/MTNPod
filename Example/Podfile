@@ -1,0 +1,6 @@
+use_frameworks!
+target 'MTNPod_Tests' do
+  pod 'MTNPod', :path => '../'
+  
+  
+end

@@ -1,0 +1,6 @@
+framework module Pods_MTNPod_Tests {
+  umbrella header "Pods-MTNPod_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

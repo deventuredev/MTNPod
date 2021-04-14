@@ -1,6 +1,0 @@
-framework module MTNPod {
-  umbrella header "MTNPod-umbrella.h"
-
-  export *
-  module * { export * }
-}

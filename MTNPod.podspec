@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MTNPod'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of MTNPod.'
+  s.version          = '1.0.0'
+  s.summary          = 'The pod of MTN 1.0.0'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,28 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  This is the official MTN pod. This version is for testing.
                        DESC
 
-  s.homepage         = 'https://github.com/deventuredev@gmail.com/MTNPod'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/deventuredev/MTNPod'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'deventuredev@gmail.com' => 'mihai_ionascut2000@yahoo.com' }
-  s.source           = { :git => 'https://github.com/deventuredev@gmail.com/MTNPod.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'deventuredev@gmail.com' => 'mihai.ionascut@deventure.co' }
+  s.source           = { :git => 'https://github.com/deventuredev/MTNPod.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '11.0'
+  s.swift_version = '5.0'
 
-  s.source_files = 'MTNPod/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'MTNPod' => ['MTNPod/Assets/*.png']
-  # }
+  s.source_files = 'MTNPod/Classes/**'
+  s.resource_bundles = {
+      'MTNBundle' => ['MTNPod/Classes/*.{png,storyboard,xib}']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.static_framework = true
+  s.dependency 'GoogleMaps', '~> 4.2.0'
+  s.dependency 'Google-Maps-iOS-Utils', '~> 3.8.0'
+  s.dependency 'SwiftSignalRClient', '~> 0.8.0'
+  s.dependency 'SwiftProtobuf', '~> 1.0'
+
+  s.vendored_frameworks = 'Loooot.xcframework'
 end

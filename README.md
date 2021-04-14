@@ -22,7 +22,7 @@ pod 'MTNPod'
 
 ## Author
 
-deventuredev@gmail.com, mihai_ionascut2000@yahoo.com
+deventuredev@gmail.com, mihai_ionascut2000@yahoo.com, daniel.sabau@deventure.co
 
 ## License
 

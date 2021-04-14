@@ -1,0 +1,11 @@
+framework module Loooot {
+  umbrella header "Loooot.h"
+
+  export *
+  module * { export * }
+}
+
+module Loooot.Swift {
+    header "Loooot-Swift.h"
+    requires objc
+}

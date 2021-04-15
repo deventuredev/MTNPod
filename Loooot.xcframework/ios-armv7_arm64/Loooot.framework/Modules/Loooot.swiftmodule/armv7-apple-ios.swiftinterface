@@ -1140,11 +1140,12 @@ public protocol ProtoHttpManagerDelegate {
   @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
 @_hasMissingDesignatedInitializers public class FontHelper {
-  public static func initializeFonts()
-  public static func setBoldFont(label titleLabel: UIKit.UILabel?, ofSize fontSize: CoreGraphics.CGFloat)
-  public static func setRegularFont(label titleLabel: UIKit.UILabel?, ofSize fontSize: CoreGraphics.CGFloat)
-  public static func GetToolbarFont() -> UIKit.UIFont
-  public static func GetNavigationFont() -> UIKit.UIFont
+  public static func initRegularFont(fontName: Swift.String)
+  public static func initBoldFont(fontName: Swift.String)
+  public static func setRegularFont(label: UIKit.UILabel?, ofSize: CoreGraphics.CGFloat)
+  public static func setBoldFont(label: UIKit.UILabel?, ofSize: CoreGraphics.CGFloat)
+  public static func getToolbarFont() -> UIKit.UIFont
+  public static func getBottomNavigationFont() -> UIKit.UIFont
   @objc deinit
 }
 public protocol MenuDelegate {
